@@ -20,8 +20,7 @@ class PdfToEpub < Formula
   end
 
   def install
-    staging_dir = Dir["pdf_to_epub-*"].first
-    bin.install "#{staging_dir}/pdf_to_epub"
+    bin.install "pdf_to_epub"
   end
 
   test do
