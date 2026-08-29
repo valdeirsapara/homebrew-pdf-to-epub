@@ -11,5 +11,11 @@ próximo release.
 ## Instalação
 
 ```bash
-brew install valdeirsapara/pdf-to-epub/pdf_to_epub
+brew tap valdeirsapara/pdf-to-epub
+brew trust valdeirsapara/pdf-to-epub
+brew install pdf_to_epub
 ```
+
+O `brew trust` é pedido uma única vez: o Homebrew se recusa a carregar fórmulas de taps
+de terceiros até que você declare que confia neles. Para confiar só nesta fórmula, use
+`brew trust --formula valdeirsapara/pdf-to-epub/pdf_to_epub`.
